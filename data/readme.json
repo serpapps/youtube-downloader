@@ -2,20 +2,17 @@
   "id": 91,
   "created_at": "2025-01-23T00:00:00Z",
   "seo_title": "Youtube Downloader - Free Content Download Tool",
-  "seo_description": "https://serp.ly/youtube-downloader",
+  "seo_description": null,
   "product_page_url": "https://store.serp.co/product-details/product/youtube-downloader",
   "purchase_url": "https://serp.ly/youtube-downloader",
   "store_product_id": null,
   "name": "Youtube Downloader",
-  "tagline": "https://serp.ly/youtube-downloader",
-  "featured_image": "images/youtube-downloader.jpg",
-  "featured_image_gif": "images/youtube-downloader.gif",
+  "tagline": "Download YouTube videos, playlists, and shorts in 4K with subtitles",
+  "featured_image": "https://raw.githubusercontent.com/serpapps/youtube-downloader/assets/images/youtube-downloader.jpg",
+  "featured_image_gif": "https://raw.githubusercontent.com/serpapps/youtube-downloader/assets/images/youtube-downloader.gif",
   "github_repo_url": "https://github.com/serpapps/youtube-downloader",
   "github_repo_tags": [
-    "youtube-downloader",
-    "downloader",
-    "automation",
-    "tools"
+    "youtube-downloader"
   ],
   "github_gist_url": null,
   "features": [
@@ -55,13 +52,11 @@
     "Node.js",
     "Automation"
   ],
-  "serpco_product_page_link": "https://store.serp.co/product-details/product/youtube-downloader",
-  "serpai_product_page_link": null,
+  "serpco_product_page_link": "https://serp.co/products/youtube-downloader/reviews/",
+  "serpai_product_page_link": "https://serp.ai/products/youtube-downloader/reviews/",
   "file_formats": null,
   "categories": [
-    "Video Downloaders",
-    "Content Tools",
-    "Automation"
+    "video sharing"
   ],
   "extraction_targets": null,
   "content_medium": null,
@@ -72,21 +67,18 @@
     "devinschumacher"
   ],
   "funding_links_liberapay": [
-    "serply"
+    "devinschumacher"
   ],
   "funding_links_opencollective": [
-    "serply"
+    "devinschumacher"
   ],
   "funding_links_custom": [
     "https://serpapps.github.io/youtube-downloader",
     "https://devinschumacher.com/youtube-downloader",
-    "https://serp.co/products/youtube-downloader/reviews/"
+    "https://serp.co/products/youtube-downloader/",
+    "https://github.com/sponsors/devinschumacher"
   ],
   "keywords": [
-    "youtube",
-    "downloader",
-    "automation",
-    "tool",
-    "free"
+    "youtube downloader"
   ]
 }
