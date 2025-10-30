@@ -53,19 +53,19 @@ YouTube Downloader plugs into watch pages, Shorts, and embedded players, decrypt
 
 <br><br>
 ![YouTube Downloader home screen](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-1.jpg)
-*YouTube Downloader home screen showing the video URL input form*
+
 <br><br>
 ![YouTube Downloader format selection](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-2.jpg)
-*YouTube Downloader format selection options for video and audio*
+
 <br><br>
 ![YouTube Downloader download queue](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-3.jpg)
-*YouTube Downloader download queue with progress indicators*
+
 <br><br>
 ![YouTube Downloader completed downloads](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-4.jpg)
-*YouTube Downloader list of completed downloads ready for export*
+
 <br><br>
 ![YouTube Downloader settings panel](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-5.jpg)
-*YouTube Downloader settings panel for configuring output options*
+
 <br><br>
 
 ## Pricing
@@ -94,20 +94,16 @@ Download instantly • Lifetime updates included • No refunds
 
 > Note: You can find your license key in your email confirmation from purchasing the product
 
-### Supported Browsers
-
-- Chrome and Chromium-based browsers (Edge, Brave, Opera)
-- Make sure you're on an up-to-date build for Manifest V3 compatibility
-
 ### Supported Operating Systems
 
 - Windows
 - macOS
 - Linux
-
-### Supported Regions
-
-- Worldwide
+- chrome
+- firefox
+- edge
+- opera
+- brave
 
 ## Frequently Asked Questions
 
@@ -134,23 +130,6 @@ For long conversions we recommend keeping the original tab open. That ensures th
 ### Which browsers are supported?
 
 Chrome and Chromium-based browsers like Edge, Brave, and Opera are supported. Make sure you're on an up-to-date build for Manifest V3 compatibility.
-
-## Reviews
-
-### Riley Thompson - Finally handles encrypted YouTube streams
-⭐⭐⭐⭐⭐ (5/5) - February 19, 2025
-
-> We archive client livestreams and Shorts. This is the only tool that keeps up with YouTube's encryption changes and still hands back perfect MP4 files.
-
-### Morgan Lee - A must-have for creative briefs
-⭐⭐⭐⭐⭐ (4.9/5) - March 7, 2025
-
-> The quality list and file-size estimates mean no surprises, and the three-download queue lets me prep assets for edits in one sitting.
-
-### Dana Alvarez - Great for research teams
-⭐⭐⭐⭐⭐ (4.8/5) - January 31, 2025
-
-> Embedded videos on partner portals used to be a pain. This extension detects them instantly and finishes the background conversion while we keep browsing.
 
 ## Permissions Justifications
 
@@ -200,6 +179,4 @@ YouTube Downloader solves this by seamlessly integrating with YouTube's watch pa
 - **Privacy Focused**: All decryption and merging happens on your device—no data sent to third parties
 - **Developer Friendly**: Generates yt-dlp commands for advanced users who want scriptable workflows
 
----
 
-**[Get YouTube Downloader Now](https://serp.ly/youtube-downloader)**
