@@ -2,7 +2,7 @@
 title: YouTube Downloader | Download YouTube Downloader for Offline Access
 ---
 
-# YouTube Downloader (Browser Extension)
+# YouTube Video Downloader - Browser Extension (Chrome, Firefox, Edge, Opera, Brave) | Download YouTube Videos, Thumbnails, Transcripts, Audio
 
 **Save YouTube videos instantly for offline viewing.**
 
@@ -179,4 +179,8 @@ YouTube Downloader solves this by seamlessly integrating with YouTube's watch pa
 - **Privacy Focused**: All decryption and merging happens on your device—no data sent to third parties
 - **Developer Friendly**: Generates yt-dlp commands for advanced users who want scriptable workflows
 
+## Related
 
+- [How to Download YouTube Videos for Free](https://gist.github.com/devinschumacher/73bca8b4c4554e0a295be8d175b2ac77)
+- [Youtube Video Downloader Launch Gist](https://gist.github.com/devinschumacher/7d1d8d644a765f3b854e544de4bb2d0d)
+- 📁 Repository [here](https://github.com/serpapps/youtube-downloader)
