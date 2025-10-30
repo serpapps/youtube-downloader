@@ -1,10 +1,10 @@
 ---
-title: Youtube Downloader | Download Youtube Downloader for Offline Access
+title: YouTube Downloader | Download YouTube Downloader for Offline Access
 ---
 
-# Youtube Downloader (Browser Extension)
+# YouTube Downloader (Browser Extension)
 
-**Save Youtube videos instantly for offline viewing.**
+**Save YouTube videos instantly for offline viewing.**
 
 YouTube Downloader plugs into watch pages, Shorts, and embedded players, decrypts YouTube's adaptive streams, and delivers high-quality MP4 or WebM files you can use offline. It handles encrypted URLs, merges separate video/audio tracks automatically, and keeps a clean queue so creators and researchers can archive content reliably.
 
@@ -160,7 +160,7 @@ Writes the merged MP4 or WebM files directly to your downloads folder and tracks
 
 ### storage
 
-Saves licence activation, preferred quality settings, and queue history locally so everything persists between browser sessions.
+Saves license activation, preferred quality settings, and queue history locally so everything persists between browser sessions.
 
 ### activeTab
 
@@ -176,7 +176,7 @@ Reads player configuration data to decrypt stream URLs, fetch manifests, and mer
 
 ### notifications
 
-Sends completion, error, and licence prompts without forcing you to keep the popup open during longer conversions.
+Sends completion, error, and license prompts without forcing you to keep the popup open during longer conversions.
 
 ### contextMenus
 
