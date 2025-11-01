@@ -184,3 +184,16 @@ YouTube Downloader solves this by seamlessly integrating with YouTube's watch pa
 - [How to Download YouTube Videos for Free](https://gist.github.com/devinschumacher/73bca8b4c4554e0a295be8d175b2ac77)
 - [Youtube Video Downloader Launch Gist](https://gist.github.com/devinschumacher/7d1d8d644a765f3b854e544de4bb2d0d)
 - 📁 Repository [here](https://github.com/serpapps/youtube-downloader)
+
+
+<details>
+  <summary>Keywords</summary>
+  
+- how to download a youtube video
+- how to download youtube videos for free
+- how to convert youtube to mp3
+- how to get transcript of youtube video
+- how to find transcript on youtube
+- how to change mov to mp4
+  
+</details>
