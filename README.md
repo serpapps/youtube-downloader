@@ -1,88 +1,199 @@
-# Download YouTube Videos — Any Quality, Right from Your Browser
+---
+title: YouTube Downloader | Download YouTube Downloader for Offline Access
+---
 
-A browser extension that saves videos from YouTube.com and embedded YouTube players on any website. Go to any YouTube video, click the download button on the player or the extension icon, choose your quality, and save it as an MP4 file. Detects embedded YouTube videos on third-party sites automatically. No extra software needed. 3 free downloads included.
+# YouTube Video Downloader - Browser Extension (Chrome, Firefox, Edge, Opera, Brave) | Download YouTube Videos, Thumbnails, Transcripts, Audio
 
-**Product page:** [https://serp.ly/youtube-downloader](https://serp.ly/youtube-downloader)<br>
-**Help center:** [https://help.serp.co/en/](https://help.serp.co/en/)<br>
-**Latest release:** [https://github.com/serpapps/youtube-downloader/releases/latest](https://github.com/serpapps/youtube-downloader/releases/latest)
+**Save YouTube videos instantly for offline viewing.**
 
-## Why Video Downloader for YouTube
+YouTube Downloader plugs into watch pages, Shorts, and embedded players, decrypts YouTube's adaptive streams, and delivers high-quality MP4 or WebM files you can use offline. It handles encrypted URLs, merges separate video/audio tracks automatically, and keeps a clean queue so creators and researchers can archive content reliably.
 
-YouTube videos cannot be saved with a simple right-click. The platform uses adaptive streaming and signature protection that blocks ordinary download attempts. Generic downloaders frequently break when YouTube updates its systems. Desktop tools require installation and command-line knowledge most people do not want to deal with. Embedded YouTube videos on blogs, course sites, and news articles are even harder to save. Video Downloader for YouTube handles all of this directly in your browser with purpose-built YouTube integration that finds every available quality other tools miss.
+- Archive Shorts, embedded players, and unlisted review links without quality loss
+- Deliver ready-to-edit MP4 files by merging adaptive streams automatically
+- Keep projects private thanks to on-device decryption and background processing
 
-## Key Features
+![youtube-downloader](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-5.jpg)
 
-- In-page download button appears right on the YouTube video player — no need to leave the page
-- Extracts every available quality option from 144p up to 4K, depending on the original upload
-- All videos save as standard MP4 files that play on any device or media player
-- Quality selector displays every available resolution so you always get the one you want
-- Download queue supporting up to 3 concurrent downloads with real-time progress and speed display
-- Detects YouTube embeds on any third-party website and adds download buttons automatically
-- Cross-tab download manager keeps your progress visible across browser tabs
-- Copy ready-made yt-dlp commands for Mac and Windows if you prefer the command line
-- Works on Chrome, Edge, Brave, Opera, Firefox, Whale, and Yandex
+## 🔗 Links
 
-## How It Works
+- 🎁 Get it [here](https://serp.ly/youtube-downloader)
+- ❓ Check FAQs [here](https://github.com/orgs/serpapps/discussions/categories/faq)
+- 🐛 Report bugs [here](https://github.com/serpapps/youtube-downloader/issues)
+- 🆕 Request features [here](https://github.com/serpapps/youtube-downloader/issues)
 
-1. **Install** — Add Video Downloader for YouTube to your browser
-2. **Play** — Navigate to YouTube.com and start playing any video
-3. **Click** — Use the download button on the player or click the extension icon
-4. **Download** — Pick your quality and hit Download — the video saves as MP4
+### Resources
 
-## Supported Formats
+- 💬 [Community](https://serp.ly/@serp/community)
+- 💌 [Newsletter](https://serp.ly/@serp/email)
+- 🛒 [Shop](https://serp.ly/@serp/store)
+- 🎓 [Courses](https://serp.ly/@serp/courses)
 
-All videos are saved as standard MP4 files compatible with any device or media player. The extension queries YouTube for every available quality level and displays them in the selector. Quality options depend on the original upload and typically range from 144p through 1080p, 1440p, and up to 4K. When a video requires separate audio and video streams, they are merged into a single MP4 automatically.
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Pricing](#pricing)
+- [Installation Instructions](#installation-instructions)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Reviews](#reviews)
+- [Permissions Justifications](#permissions-justifications)
+- [About](#about)
 
-## Who It's For
+## Features
 
-- YouTube viewers who want to save videos for offline access on any device
-- Content creators archiving their own YouTube uploads as local backups
-- Students and educators saving tutorials, lectures, and educational content
-- Anyone who needs to download YouTube videos embedded on third-party websites
+- Detects YouTube watch pages, Shorts, and embedded players instantly
+- Decrypts player responses to surface the original MP4 or WebM sources
+- Converts DASH and HLS streams, merging audio and video into a single MP4
+- Lists every available quality with file-size estimates and remembers your last pick
+- Queues up to three downloads at once with live progress, speed, and ETA tracking
+- Keeps downloads running in the background while you browse other tabs
+- Generates ready-to-run yt-dlp commands for advanced workflows
+- Stores license activation and preferences locally with zero analytics
 
-## Common Use Cases
+## Screenshots
 
-- Save a YouTube video for offline viewing during travel or limited connectivity
-- Download educational tutorials, lectures, or how-to guides for later study
-- Archive your own YouTube channel uploads to local storage
-- Download YouTube videos embedded on blogs, course platforms, or news sites
-- Choose a specific quality level to manage storage space on your device
-- Copy yt-dlp commands from the popup for advanced batch downloading
+<br><br>
+![YouTube Downloader home screen](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-1.jpg)
 
-## Trial & Access
+<br><br>
+![YouTube Downloader format selection](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-2.jpg)
 
-Sign in with your email to unlock 3 free trial downloads. No credit card required. Purchase a license for unlimited downloads at [serp.ly/youtube-downloader](https://serp.ly/youtube-downloader).
+<br><br>
+![YouTube Downloader download queue](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-3.jpg)
 
-## FAQ
+<br><br>
+![YouTube Downloader completed downloads](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-4.jpg)
 
-**How do I download a YouTube video**
-Go to any video on YouTube.com and press play. Click the download button that appears on the player, or click the extension icon in your toolbar. Select your preferred quality and click Download.
+<br><br>
+![YouTube Downloader settings panel](https://raw.githubusercontent.com/serpapps/youtube-downloader/refs/heads/main/screenshots/youtube-downloader-5.jpg)
 
-**What quality options are available**
-The extension finds every available format for each video — typically from 144p up to 4K, depending on what was originally uploaded. You choose the resolution that works best for you.
+<br><br>
 
-**What format are downloaded videos**
-All videos are saved as standard MP4 files. When separate video and audio streams are needed, they are merged into a single MP4 automatically.
+## Pricing
 
-**Where are my downloads saved**
-Your browser's save-as dialog appears so you can choose exactly where to save each file. There is no forced download folder.
+**One-time payment: $17.00 USD**
 
-**How many free downloads do I get**
-3 free downloads after signing in with your email. No credit card required. Purchase a license for unlimited downloads.
+Download instantly • Lifetime updates included • No refunds
 
-**Does this work on Firefox**
-Yes. It supports Chrome, Edge, Brave, Opera, Whale, Yandex, and Firefox.
+**[Get it Now](https://serp.ly/youtube-downloader)**
 
-**Can I download YouTube videos embedded on other websites**
-Yes. The extension detects YouTube embeds and links on any website and shows download buttons next to them automatically.
+### Benefits
 
-**Is my data safe**
-Yes. All video processing happens locally in your browser. Authentication uses a secure one-time code sent to your email — no passwords are stored. The extension does not collect or transmit personal data.
+- Archive Shorts, embedded players, and unlisted review links without quality loss
+- Deliver ready-to-edit MP4 files by merging adaptive streams automatically
+- Keep projects private thanks to on-device decryption and background processing
 
-## Notes
+## Installation Instructions
 
-All video processing happens locally in your browser. No external tools or desktop software required. Users are responsible for ensuring they have the right to download content. This extension is intended for downloading content you own or have permission to download.
+1. Purchase a license at [https://serp.ly/youtube-downloader](https://serp.ly/youtube-downloader)
+2. Download the latest `.zip` file from the [Releases page](https://github.com/serpapps/youtube-downloader/releases)
+3. Extract the ZIP file (aka double click it)
+4. Open Chrome and go to `chrome://extensions/`
+5. Enable "Developer mode" (top right toggle)
+6. Click "Load unpacked" (top left button) and select the extracted folder
+7. When you click on the extension for the first time, you will need to enter your `email` & `license key` associated with the extension
 
-## Get It
+> Note: You can find your license key in your email confirmation from purchasing the product
 
-[Download Video Downloader for YouTube](https://serp.cc/VDM-youtube-downloader)
+### Supported Operating Systems
+
+- Windows
+- macOS
+- Linux
+- chrome
+- firefox
+- edge
+- opera
+- brave
+
+## Frequently Asked Questions
+
+### Does it work with YouTube Shorts and embedded players?
+
+Yes. The extension detects Shorts feeds, standard watch pages, and embedded players on third-party sites, then serves the same quality list in each case.
+
+### Can I download a livestream while it is broadcasting?
+
+The downloader supports livestream replays, but it needs the on-demand version to exist first. Once the replay is posted it converts the HLS stream into a single MP4.
+
+### Will it download movies or episodes I purchased on YouTube?
+
+No. DRM-protected purchases remain off limits. The downloader only works on videos you can already view without digital rights management.
+
+### How many downloads can run simultaneously?
+
+Up to three downloads can be active at once. Each item shows progress, speed, and an interrupt button so you can prioritise what matters.
+
+### Do I need to keep the video tab open the whole time?
+
+For long conversions we recommend keeping the original tab open. That ensures the stream segments stay available until the MP4 is finalised.
+
+### Which browsers are supported?
+
+Chrome and Chromium-based browsers like Edge, Brave, and Opera are supported. Make sure you're on an up-to-date build for Manifest V3 compatibility.
+
+## Permissions Justifications
+
+### downloads
+
+Writes the merged MP4 or WebM files directly to your downloads folder and tracks progress for simultaneous jobs.
+
+### storage
+
+Saves license activation, preferred quality settings, and queue history locally so everything persists between browser sessions.
+
+### activeTab
+
+Injects the downloader UI into the YouTube page you're viewing, including Shorts feeds and embedded players.
+
+### tabs
+
+Monitors when you switch videos or open new players so the extension can refresh available quality options automatically.
+
+### scripting
+
+Reads player configuration data to decrypt stream URLs, fetch manifests, and merge DASH or HLS segments into a final MP4.
+
+### notifications
+
+Sends completion, error, and license prompts without forcing you to keep the popup open during longer conversions.
+
+### contextMenus
+
+Adds a "Download with YouTube Downloader" option when you right-click embedded videos for quicker access.
+
+### host_permissions
+
+Limits privileged access to youtube.com, youtu.be, and YouTube CDN domains required to capture and decrypt the streams.
+
+## About
+
+YouTube is the world's largest video platform, hosting billions of videos from creators, educators, businesses, and entertainers. However, YouTube doesn't provide a built-in way to download videos for offline viewing—even for content you want to reference, archive, or watch without an internet connection.
+
+YouTube Downloader solves this by seamlessly integrating with YouTube's watch pages, Shorts, and embedded players to give you instant access to high-quality MP4 and WebM files. Whether you're a content creator backing up your work, a researcher archiving educational content, or someone who wants to watch videos offline during travel, this extension makes it simple and reliable.
+
+### Why Choose YouTube Downloader?
+
+- **Handles Modern YouTube**: Works with encrypted streams, DASH adaptive formats, and HLS livestream replays
+- **Quality Control**: Choose from every available quality level with accurate file size estimates
+- **Efficient Workflow**: Queue up to three downloads at once with real-time progress tracking
+- **Privacy Focused**: All decryption and merging happens on your device—no data sent to third parties
+- **Developer Friendly**: Generates yt-dlp commands for advanced users who want scriptable workflows
+
+## Related
+
+- [How to Download YouTube Videos for Free](https://gist.github.com/devinschumacher/73bca8b4c4554e0a295be8d175b2ac77)
+- [Youtube Video Downloader Launch Gist](https://gist.github.com/devinschumacher/7d1d8d644a765f3b854e544de4bb2d0d)
+- 📁 Repository [here](https://github.com/serpapps/youtube-downloader)
+
+
+<details>
+  <summary>Keywords</summary>
+  
+- how to download a youtube video
+- how to download youtube videos for free
+- how to convert youtube to mp3
+- how to get transcript of youtube video
+- how to find transcript on youtube
+- how to change mov to mp4
+  
+</details>
