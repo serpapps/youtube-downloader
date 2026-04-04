@@ -15,8 +15,6 @@ Use the product page above to get the browser extension and install instructions
 
 ![YouTube Downloader](https://raw.githubusercontent.com/serpapps/youtube-downloader/main/screenshots/youtube-downloader-5.jpg)
 
-Browser extension for detecting YouTube watch-page, Shorts, and embedded-player streams, then assembling offline MP4 or WebM downloads locally.
-
 ## What It Does
 
 - Detects YouTube watch pages, Shorts, and embedded players instantly
