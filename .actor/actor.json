@@ -4,7 +4,7 @@
   "description": "Browser extension for detecting YouTube watch-page, Shorts, and embedded-player streams, then assembling offline MP4 or WebM downloads locally.",
   "input": "./INPUT_SCHEMA.json",
   "name": "youtube-downloader",
-  "readme": "../ACTOR.md",
+  "readme": "../README.md",
   "title": "YouTube Downloader",
   "version": "0.0"
 }
