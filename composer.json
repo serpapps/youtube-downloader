@@ -1,0 +1,24 @@
+{
+    "name": "serpapps/youtube-downloader",
+    "type": "library",
+    "description": "Download YouTube videos to your computer so you can watch them offline",
+    "keywords": [
+        "youtube-downloader",
+        "youtube-video-downloader",
+        "browser-extension",
+        "video-downloader",
+        "streaming-video-downloader"
+    ],
+    "homepage": "https://github.com/serpapps/youtube-downloader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SERP Apps",
+            "homepage": "https://github.com/serpapps",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+}
