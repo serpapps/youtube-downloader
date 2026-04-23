@@ -1,59 +1,168 @@
 # YouTube Downloader
 
-> Save YouTube videos instantly for offline viewing.
+> Download supported YouTube videos as MP4 or WebM files from watch pages, Shorts, and embedded players.
 
-## Get the extension
+![YouTube Downloader](https://raw.githubusercontent.com/serpapps/youtube-downloader/main/assets/workflow-preview.webp)
 
-**Install here:** [YouTube Downloader](https://serp.ly/youtube-downloader)
+YouTube Downloader is a browser extension built for users who need a cleaner way to save supported YouTube videos for offline access. It is designed for browser playback flows across watch pages, Shorts, and embedded players, and it helps you export usable files without relying on manual stream handling.
 
-Use the product page above to get the browser extension and install instructions.
+- Save supported YouTube videos from watch pages, Shorts, and embeds
+- Export MP4 or WebM output depending on the source workflow
+- Keep offline copies for research, editing, and review
+- Use a browser-native download flow instead of manual extraction
+- Preserve a cleaner workflow for long-form and short-form content
 
-- Product page: https://serp.ly/youtube-downloader
-- Firefox Add-ons: https://addons.mozilla.org/en-US/firefox/addon/youtube-video-downloader-serp/
-- GitHub repo: https://github.com/serpapps/youtube-downloader
-- Latest release: https://github.com/serpapps/youtube-downloader/releases/latest
+## Get it Here
 
-![YouTube Downloader](https://raw.githubusercontent.com/serpapps/youtube-downloader/main/screenshots/youtube-downloader-5.jpg)
+Get it here: https://serp.ly/youtube-downloader
 
-## What It Does
+## Table of Contents
 
-- Detects YouTube watch pages, Shorts, and embedded players instantly
-- Download YouTube videos to MP4s
-- Decrypts player responses to surface the original MP4 or WebM sources
-- Converts DASH and HLS streams, merging audio and video into a single MP4
-- Lists every available quality with file-size estimates and remembers your last pick
-- Queues up to three downloads at once with live progress, speed, and ETA tracking
-- Keeps downloads running in the background while you browse other tabs
-- Generates ready-to-run yt-dlp commands for advanced workflows
-- Stores license activation and preferences locally with zero analytics
+- [Why YouTube Downloader](#why-youtube-downloader)
+- [Features](#features)
+- [How It Works](#how-it-works)
+- [Step-by-Step Tutorial: How to Download Videos from YouTube](#step-by-step-tutorial-how-to-download-videos-from-youtube)
+- [Supported Formats](#supported-formats)
+- [Who It's For](#who-its-for)
+- [Common Use Cases](#common-use-cases)
+- [Troubleshooting](#troubleshooting)
+- [Trial & Access](#trial--access)
+- [Installation Instructions](#installation-instructions)
+- [FAQ](#faq)
+- [License](#license)
+- [Notes](#notes)
+- [About YouTube](#about-youtube)
 
-## Compatibility
+## Why YouTube Downloader
 
-- Supported platforms: windows, mac, linux, chrome, firefox, edge, opera
-- Categories: Downloader, Video Downloader
+YouTube uses adaptive streaming and multiple playback contexts, so the actual media source is not exposed as one obvious file. Watch pages, Shorts, and embedded players can all behave differently. That makes generic downloader behavior inconsistent and often harder than users expect.
+
+YouTube Downloader is built to simplify that browser workflow. Open the page, let the extension detect the supported media source, choose the format or quality you want when options are available, and export a file you can keep offline.
+
+## Features
+
+- Detects supported YouTube media from watch pages, Shorts, and embeds
+- Multi-client InnerTube API extraction covering all available qualities from 144p to 4K
+- In-page download button built into the YouTube video player
+- Automatic HLS-to-MP4 conversion and SABR/UMP streaming support as fallbacks
+- Handles browser playback workflows more cleanly than manual extraction
+- Exports usable MP4 or WebM output depending on the source
+- Download queue with up to 3 concurrent downloads
+- Detects YouTube embeds on third-party websites
+- SPA-aware detection that works with YouTube navigation without page reloads
+- Works on Chrome, Edge, Brave, Opera, Firefox, Whale, and Yandex
+
+## How It Works
+
+1. Install the extension from the latest release.
+2. Open a YouTube video, Short, or embedded player and start playback.
+3. Let the extension detect the active media source.
+4. Open the popup or use the in-page download button on the player.
+5. Review the available formats and quality options.
+6. Select the quality you want from the available resolutions.
+7. Start the download and save the file locally.
+
+## Step-by-Step Tutorial: How to Download Videos from YouTube
+
+1. Install YouTube Downloader in your browser.
+2. Open the YouTube watch page, Short, or embedded player you want to save.
+3. Start playback so the browser loads the active media source.
+4. Click the in-page download button on the player, or open the extension popup.
+5. Review the detected video options and available qualities.
+6. Choose the format or quality you want if more than one option is listed.
+7. Start the download and wait for the export to finish.
+8. Open the saved file from your Downloads folder.
+9. For advanced use, copy yt-dlp commands from the popup for Mac or Windows.
+
+## Supported Formats
+
+- Input: supported YouTube browser playback sources
+- Output: MP4 or WebM, depending on the source workflow
+
+Saved files typically use MP4 so they are easier to replay on standard media players, move between devices, or archive locally. When separate video and audio streams are downloaded, they are merged automatically.
+
+## Who It's For
+
+- Researchers saving reference videos for offline review
+- Creators keeping working copies of their own content
+- Students archiving educational or tutorial content
+- Users who want a browser-based workflow for supported YouTube pages
+- People who need offline access to videos they can already watch in the browser
+
+## Common Use Cases
+
+- Save a YouTube watch-page video for later
+- Download Shorts for offline reference
+- Export embedded-player content from supported sites
+- Download YouTube videos embedded on third-party websites
+- Keep local copies for review, research, or editing
+
+## Troubleshooting
+
+**The extension does not detect the video**  
+Start playback first and wait for the page to initialize the active source.
+
+**The page is a Short or embed**  
+Open the popup again after playback starts so the extension can rescan the active page state.
+
+**Only one format appears**
+That means the current playback flow is exposing one usable source to the extension.
+
+**The download failed partway through**
+Check your connection and refresh the page before starting again. Try a different quality if one format fails.
+
+**The page is age-restricted or region-locked**
+The extension only works on media you can already open and play in your active browser session.
+
+## Trial & Access
+
+- Includes **3 free downloads** so you can test the workflow first
+- Email sign-in uses secure one-time password verification
+- No credit card required for the trial
+- Unlimited downloads are available with a paid license
+
+Start here: [https://serp.ly/youtube-downloader](https://serp.ly/youtube-downloader)
+
+## Installation Instructions
+
+1. Open the latest release page: [GitHub Releases](https://github.com/serpapps/youtube-downloader/releases/latest)
+2. Download the correct build for your browser.
+3. Install the extension.
+4. Open a supported YouTube page and start playback.
+5. Use the popup to detect and download the media.
 
 ## FAQ
 
-### Does it work with YouTube Shorts and embedded players?
+**Can it work on Shorts and embeds?**  
+Yes. It supports supported Shorts and embedded-player workflows in addition to watch pages.
 
-Yes. The extension detects Shorts feeds, standard watch pages, and embedded players on third-party sites, then serves the same quality list in each case.
+**Does it always export MP4?**  
+Not always. Output depends on the active source workflow and available media format.
 
-### Can I download a livestream while it is broadcasting?
+**Do I need extra software?**
+No. The workflow runs entirely inside the browser extension.
 
-The downloader supports livestream replays, but it needs the on-demand version to exist first. Once the replay is posted it converts the HLS stream into a single MP4.
+**Can I download YouTube videos embedded on other websites?**
+Yes. The extension detects YouTube iframes and links on any website and shows download buttons next to them.
 
-### Will it download movies or episodes I purchased on YouTube?
+**What is the yt-dlp command feature?**
+For advanced users, the popup includes buttons to copy yt-dlp commands for Mac and Windows, in case you prefer to download via the command line.
 
-No. DRM-protected purchases remain off limits. The downloader only works on videos you can already view without digital rights management.
+**Is my data safe?**
+Yes. All video processing happens locally in your browser. Authentication uses secure OTP with no passwords stored.
 
-### How many downloads can run simultaneously?
+## License
 
-Up to three downloads can be active at once. Each item shows progress, speed, and an interrupt button so you can prioritise what matters.
+This repository is distributed under the proprietary SERP Apps license in the [LICENSE](https://github.com/serpapps/youtube-downloader/blob/main/LICENSE) file. Review that file before copying, modifying, or redistributing any part of this project.
 
-### Do I need to keep the video tab open the whole time?
+## Notes
 
-For long conversions we recommend keeping the original tab open. That ensures the stream segments stay available until the MP4 is finalised.
+- Only download content you own or have explicit permission to save
+- An internet connection is required for downloads
+- Quality depends on the original upload resolution
+- YouTube API changes may temporarily affect functionality
+- Must press play before detection can begin
 
-### Which browsers are supported?
+## About YouTube
 
-Chrome and Chromium-based browsers like Edge, Brave, and Opera are supported. Make sure you’re on an up-to-date build for Manifest V3 compatibility.
+YouTube is a large video platform with multiple playback contexts and adaptive streaming workflows. YouTube Downloader is built to make supported browser downloads easier for users who already have access to that media in the browser.
