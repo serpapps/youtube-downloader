@@ -1,5 +1,11 @@
 # YouTube Downloader (Browser Extension)
 
+## Watch the video
+
+<a href="https://www.youtube.com/watch?v=l5oJwqxB4Gk" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/youtube-downloader-save-videos-before-they-disappear.jpg" width="700px">
+</a>
+
 > Download supported YouTube videos as MP4 or WebM files from watch pages, Shorts, and embedded players.
 
 YouTube Downloader is a browser extension built for users who need a cleaner way to save supported YouTube videos for offline access. It is designed for browser playback flows across watch pages, Shorts, and embedded players, and it helps you export usable files without relying on manual stream handling.
