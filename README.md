@@ -20,7 +20,9 @@ YouTube Downloader is a browser extension built for users who need a cleaner way
 
 ## Preview
 
-![YouTube Downloader workflow preview](assets/workflow-preview.webp)
+<a href="https://www.youtube.com/watch?v=l5oJwqxB4Gk" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/youtube-downloader-save-videos-before-they-disappear.jpg" width="700px">
+</a>
 
 ## Table of Contents
 
