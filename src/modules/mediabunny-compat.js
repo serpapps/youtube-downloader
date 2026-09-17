@@ -1,0 +1,1 @@
+export*from"./mediabunny/dist/modules/src/index.js";export const Logging={_error:(...o)=>console.error(...o),_warn:(...o)=>console.warn(...o),_info:(...o)=>console.info(...o),_debug:(...o)=>console.debug(...o)};
