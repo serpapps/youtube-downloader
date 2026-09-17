@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Downloader for YouTube</title>
+    <style id="serp-auth-boot-css">#activationSection{display:none !important;} #activationSection[data-serp-auth-ui="1"]{display:block !important;}</style>
+    <script src="site-config.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/popup-enhanced.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Help text display area at the very top -->
+      <div id="helpTextDisplay" class="help-text-display hidden">
+        <div class="help-text-content">
+          <strong>Quick Tips:</strong> Open a YouTube video, press play, and then open this popup. If the video is detected, choose a quality and click Download. Use Cancel to stop an active download.
+        </div>
+      </div>
+
+      <div class="header">
+        <h2>Video Downloader for YouTube</h2>
+        <div class="header-right">
+          <!-- <div class="version">v2.0.0</div> -->
+          <button id="rescanBtn" class="rescan-btn hidden" title="Rescan current tab" aria-label="Rescan current tab">Rescan</button>
+          <button id="helpBtn" class="help-btn" title="Quick help" aria-label="Quick help">?</button>
+        </div>
+        <div id="authStatus" class="auth-status"></div>
+      </div>
+
+      <!-- Shown while we determine activation state (prevents blank UI/flicker) -->
+      <div id="bootSplash" class="status loading">Loading...</div>
+      <div id="activationSection" class="activation-section hidden"></div>
+
+      <div id="mainContent" class="hidden app-shell">
+        <div class="sidebar-preference-row">
+          <label class="player-overlay-setting" for="playerOverlayToggle">
+            <span>
+              <strong>Player overlay</strong>
+              <small>Show the Download button over the video.</small>
+            </span>
+            <input id="playerOverlayToggle" type="checkbox" checked />
+            <span class="player-overlay-switch" aria-hidden="true"></span>
+          </label>
+        </div>
+
+        <div id="passwordSection" class="password-section hidden">
+          <label for="passwordInput">Video Password:</label>
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter password..."
+          />
+        </div>
+
+        <div id="status" class="status">Checking current page for video...</div>
+
+        <div id="videoInfo" class="video-info hidden">
+          <div class="video-card">
+            <div class="video-thumbnail-container">
+              <img
+                id="videoThumbnail"
+                src=""
+                alt="Video thumbnail"
+                class="video-thumbnail-image hidden"
+              />
+              <div id="thumbnailPlaceholder" class="thumbnail-placeholder">
+                <div class="placeholder-content">
+                  <div class="placeholder-icon">&#x1F3A5;</div>
+                  <span class="placeholder-text">No thumbnail available</span>
+                </div>
+              </div>
+              <div class="video-duration-badge" id="durationBadge"></div>
+            </div>
+            <div class="video-content">
+              <h3 id="videoTitle" class="video-title">Loading...</h3>
+              <div class="video-metadata">
+                <div class="metadata-row">
+                  <span class="metadata-label">By</span>
+                  <span class="metadata-value" id="videoOwner"></span>
+                </div>
+                <div class="metadata-row">
+                  <span class="metadata-label">Quality</span>
+                  <span class="metadata-value" id="videoResolution"></span>
+                </div>
+              </div>
+              <div class="video-description" id="videoDescription"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="downloadModeTabs" class="mode-tabs" role="tablist" aria-label="Download mode">
+          <button class="mode-tab active" type="button" data-mode="video" role="tab" aria-selected="true">
+            <span class="mode-tab-icon">MP4</span>
+            <span>Video</span>
+          </button>
+          <button class="mode-tab" type="button" data-mode="audio" role="tab" aria-selected="false">
+            <span class="mode-tab-icon">MP3</span>
+            <span>Audio</span>
+          </button>
+          <button class="mode-tab" type="button" data-mode="queue" role="tab" aria-selected="false">
+            <span class="mode-tab-icon">3</span>
+            <span>Queue</span>
+          </button>
+        </div>
+
+        <div id="videoModePanel" class="mode-panel" data-panel="video">
+          <div class="mode-panel-heading">
+            <div>
+              <div class="panel-title">Video Quality</div>
+              <div id="videoQualityHint" class="panel-subtitle">Best MP4 will use the highest playable stream.</div>
+            </div>
+            <span id="videoFormatCount" class="format-count">0 formats</span>
+          </div>
+          <div id="videoQualityGrid" class="quality-grid" aria-label="Video qualities"></div>
+        </div>
+
+        <div id="audioModePanel" class="mode-panel hidden" data-panel="audio">
+          <div class="mode-panel-heading">
+            <div>
+              <div class="panel-title">Audio Output</div>
+              <div id="audioQualityHint" class="panel-subtitle">MP3 uses browser offscreen processing. M4A Original is fastest.</div>
+            </div>
+            <span id="audioFormatCount" class="format-count">0 formats</span>
+          </div>
+          <div id="audioQualityGrid" class="quality-grid audio-quality-grid" aria-label="Audio outputs"></div>
+          <div id="audioSupportNote" class="support-note hidden"></div>
+        </div>
+
+        <div id="queueModePanel" class="mode-panel queue-mode-panel hidden" data-panel="queue">
+          <div class="mode-panel-heading">
+            <div>
+              <div class="panel-title">Download Queue</div>
+              <div id="queueSummary" class="panel-subtitle">No active downloads.</div>
+            </div>
+            <span id="queueBadge" class="format-count">0 active</span>
+          </div>
+          <div id="queueList" class="queue-list">
+            <div class="queue-empty">Started downloads appear in the YouTube page panel.</div>
+          </div>
+          <div class="queue-actions">
+            <button id="openQueueBtn" class="secondary-action" type="button">Open Queue</button>
+            <button id="clearCompletedBtn" class="secondary-action" type="button">Clear Finished</button>
+          </div>
+        </div>
+
+        <div id="qualitySection" class="quality-section hidden">
+          <label for="qualitySelect">Choose Quality:</label>
+          <select id="qualitySelect" class="quality-select">
+            <option value="">Loading qualities...</option>
+          </select>
+        </div>
+
+        <button id="downloadBtn" class="download-btn" disabled>
+          <span class="btn-text">Download Video</span>
+          <span class="btn-icon">&darr;</span>
+        </button>
+
+        <div id="progress" class="progress-container hidden">
+          <div id="singleProgress" class="single-progress">
+            <div class="progress-bar">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-info">
+              <span id="progressText">0%</span>
+              <span id="progressSpeed"></span>
+            </div>
+            <button id="cancelBtn" class="cancel-btn">
+              <span class="btn-text">Cancel Download</span>
+              <span class="btn-icon">&#x2715;</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+      </div>
+
+      <div class="footer">
+        <!-- <button id="settingsBtn" class="settings-btn" title="Settings">
+          &#x2699;
+        </button> -->
+      </div>
+    </div>
+
+    <script src="logger.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script defer src="popup-enhanced.js"></script>
+    <script defer src="auth-ui.js"></script>
+    <script defer src="trial-banner.js"></script>
+    <script defer src="update-notifier.js"></script>
+</body>
+</html>

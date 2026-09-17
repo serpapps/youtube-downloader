@@ -1,0 +1,111 @@
+{
+  "manifest_version": 3,
+  "name": "Downloader for YouTube",
+  "version": "4.0.6",
+  "description": "Download YouTube videos with advanced quality selection, queue management, and built-in licensing support.",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting",
+    "offscreen",
+    "sidePanel",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://auth.serp.co/*",
+    "https://www.youtube.com/*",
+    "https://*.youtube.com/*",
+    "https://youtu.be/*",
+    "https://*.googlevideo.com/*",
+    "https://*.googleapis.com/*",
+    "https://*.ytimg.com/*",
+    "https://*.googleusercontent.com/*",
+    "https://api.gumroad.com/*",
+    "https://ghl-check-license-worker-v2.farleythecoder.workers.dev/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "serp-bundles/background-service-worker.graph.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://*.youtube.com/*",
+        "https://m.youtube.com/*",
+        "https://youtu.be/*"
+      ],
+      "js": [
+        "serp-bundles/content-1.graph.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+        "https://www.youtube.com/*",
+        "https://*.youtube.com/*",
+        "https://m.youtube.com/*",
+        "https://youtu.be/*"
+      ],
+      "js": [
+        "serp-bundles/content-2.graph.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Downloader for YouTube",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "download-manager/integration-helper.js",
+        "download-manager/download-manager.js",
+        "download-manager/download-manager-config.js",
+        "download-manager/download-manager-state.js",
+        "download-manager/download-manager-ui.js",
+        "detectors/video-detector.js",
+        "detectors/youtube-detector.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    },
+    {
+      "resources": [
+        "offscreen-faststream.html",
+        "indexed-db.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+  }
+}
